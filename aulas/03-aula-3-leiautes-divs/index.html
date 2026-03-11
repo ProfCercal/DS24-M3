@@ -6,16 +6,16 @@
     <title>Palmeiras</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
-      <div class="topo" id="topo">
+      <div class="topo">
         <div class="marca">
-          <div class="marca-logo">
-            <img
-              src="assets/escudos/escudo_atual.png"
-              alt="Escudo atual do Palmeiras"
-            />
-          </div>
+          <img
+            class="logo-img"
+            src="assets/escudos/escudo_atual.png"
+            alt="Escudo atual do Palmeiras"
+          />
           <div class="marca-texto">
             <p class="marca-kicker">Website de exemplo com leiaute por divs</p>
             <h1>Palmeiras</h1>
@@ -215,9 +215,9 @@
             <p class="secao-kicker">Elenco atual</p>
             <h2>Formação em campo</h2>
             <p class="secao-resumo">
-              Um esquema visual com os titulares distribuídos por posição sobre
-              o campo. O leiaute é feito com divs, posicionamento absoluto e
-              efeitos de hover em CSS.
+              Esquema visual da distribuição tática da equipe levando em
+              consideração as cinco últimas escalações do Campeonato Paulista
+              2026 e o Campeonato Brasileiro 2026.
             </p>
           </div>
         </div>
@@ -230,7 +230,7 @@
                   <img src="assets/jogadores/carlos.png" alt="Carlos Miguel" />
                 </div>
                 <div class="jogador-info">
-                  <strong>1 · Carlos Miguel</strong><span>Goleiro</span>
+                  <strong>1 · Carlos Miguel</strong><span>GOL</span>
                 </div>
               </div>
               <div class="jogador-card jogador-ld">
@@ -238,7 +238,7 @@
                   <img src="assets/jogadores/khellven.png" alt="Khellven" />
                 </div>
                 <div class="jogador-info">
-                  <strong>12 · Khellven</strong><span>Lateral direito</span>
+                  <strong>12 · Khellven</strong><span>LD</span>
                 </div>
               </div>
               <div class="jogador-card jogador-zd">
@@ -249,7 +249,7 @@
                   />
                 </div>
                 <div class="jogador-info">
-                  <strong>15 · Gustavo Gómez</strong><span>Zagueiro</span>
+                  <strong>15 · Gustavo Gómez</strong><span>ZD</span>
                 </div>
               </div>
               <div class="jogador-card jogador-ze">
@@ -257,7 +257,7 @@
                   <img src="assets/jogadores/murilo.png" alt="Murilo" />
                 </div>
                 <div class="jogador-info">
-                  <strong>26 · Murilo</strong><span>Zagueiro</span>
+                  <strong>26 · Murilo</strong><span>ZE</span>
                 </div>
               </div>
               <div class="jogador-card jogador-le">
@@ -268,7 +268,7 @@
                   />
                 </div>
                 <div class="jogador-info">
-                  <strong>22 · Piquerez</strong><span>Lateral esquerdo</span>
+                  <strong>22 · Piquerez</strong><span>LE</span>
                 </div>
               </div>
               <div class="jogador-card jogador-vol-1">
@@ -276,7 +276,7 @@
                   <img src="assets/jogadores/marlon.png" alt="Marlon Freitas" />
                 </div>
                 <div class="jogador-info">
-                  <strong>17 · Marlon Freitas</strong><span>Volante</span>
+                  <strong>17 · Marlon Freitas</strong><span>VOL</span>
                 </div>
               </div>
               <div class="jogador-card jogador-vol-2">
@@ -287,7 +287,7 @@
                   />
                 </div>
                 <div class="jogador-info">
-                  <strong>8 · Andreas Pereira</strong><span>Volante</span>
+                  <strong>8 · Andreas Pereira</strong><span>VOL</span>
                 </div>
               </div>
               <div class="jogador-card jogador-pe">
@@ -295,7 +295,7 @@
                   <img src="assets/jogadores/mauricio.png" alt="Maurício" />
                 </div>
                 <div class="jogador-info">
-                  <strong>18 · Maurício</strong><span>Ponta esquerda</span>
+                  <strong>18 · Maurício</strong><span>PE</span>
                 </div>
               </div>
               <div class="jogador-card jogador-pd">
@@ -303,7 +303,7 @@
                   <img src="assets/jogadores/allan.png" alt="Allan" />
                 </div>
                 <div class="jogador-info">
-                  <strong>40 · Allan</strong><span>Ponta direita</span>
+                  <strong>40 · Allan</strong><span>PD</span>
                 </div>
               </div>
               <div class="jogador-card jogador-at-1">
@@ -311,7 +311,7 @@
                   <img src="assets/jogadores/flaco.png" alt="Flaco López" />
                 </div>
                 <div class="jogador-info">
-                  <strong>42 · Flaco López</strong><span>Atacante</span>
+                  <strong>42 · Flaco López</strong><span>ATD</span>
                 </div>
               </div>
               <div class="jogador-card jogador-at-2">
@@ -319,7 +319,7 @@
                   <img src="assets/jogadores/vitor.png" alt="Vitor Roque" />
                 </div>
                 <div class="jogador-info">
-                  <strong>9 · Vitor Roque</strong><span>Atacante</span>
+                  <strong>9 · Vitor Roque</strong><span>ATE</span>
                 </div>
               </div>
             </div>
@@ -383,7 +383,7 @@
             <div class="tecnico-box">
               <h3>Técnico</h3>
               <p>Abel Ferreira</p>
-              <span>Comandante da fase mais vitoriosa do século XXI.</span>
+              <span>Mais vitorioso comandante da história do clube.</span>
             </div>
           </div>
         </div>
@@ -393,10 +393,9 @@
         <div class="secao-cabecalho">
           <div class="secao-titulo-box">
             <p class="secao-kicker">Uniformes</p>
-            <h2>Camisas da temporada</h2>
+            <h2>Uniformes oficiais da temporada</h2>
             <p class="secao-resumo">
-              Os três uniformes aparecem em cartões independentes, com destaque
-              visual para a peça e uma legenda curta logo abaixo.
+              Os três uniformes oficiais da temporada 2026.
             </p>
           </div>
         </div>
@@ -411,7 +410,13 @@
             </div>
             <div class="camisa-legenda">
               <h3>Primeiro uniforme</h3>
-              <p>Predominância do verde tradicional do clube.</p>
+              <p>
+                Apresenta o verde tradicional como cor predominante, mas inova
+                nas laterais com faixas sublimadas em verde e vermelho. A gola
+                apresenta o inédito formato em “U” híbrido: tecido verde na nuca
+                e branco na frente, com listras finas em verde e vermelho,
+                remetendo à bandeira da Itália.
+              </p>
             </div>
           </div>
           <div class="camisa-card">
@@ -424,7 +429,10 @@
             <div class="camisa-legenda">
               <h3>Segundo uniforme</h3>
               <p>
-                Versão branca, associada ao contraste clássico do Palmeiras.
+                Predominantemente branco, com gola polo retilínea nas três cores
+                da bandeira da Itália (verde, branco e vermelho). O destaque
+                frontal fica por conta de duas faixas verticais finas, uma verde
+                e outra vermelha.
               </p>
             </div>
           </div>
@@ -438,7 +446,13 @@
             <div class="camisa-legenda">
               <h3>Terceiro uniforme</h3>
               <p>
-                Modelo dourado lançado como homenagem aos 110 anos do clube.
+                Se destaca pelo tom amarelo vibrante, com detalhes em verde
+                tradicional. O uniforme completo é composto por short azul e
+                meiões brancos com faixas verdes e amarelas, em alusão à força
+                da torcida e à grandeza do clube. A combinação remete também ao
+                uniforme usado pelo Palmeiras no histórico amistoso contra o
+                Uruguai em 1965, quando o clube representou a Seleção Brasileira
+                – da comissão técnica aos jogadores.
               </p>
             </div>
           </div>
@@ -450,10 +464,7 @@
           <div class="secao-titulo-box">
             <p class="secao-kicker">Conquistas</p>
             <h2>Títulos do Palmeiras</h2>
-            <p class="secao-resumo">
-              Tabela organizada por categoria, conforme os dados informados no
-              enunciado do exercício.
-            </p>
+            <p class="secao-resumo">Tabela organizada por categoria.</p>
           </div>
         </div>
 
@@ -602,7 +613,6 @@
     <footer>
       <div class="footer-conteudo">
         <p>Copyright © 2026 - Website de exemplo com leiaute por div.</p>
-        <a href="#topo">Voltar ao topo</a>
       </div>
     </footer>
   </body>

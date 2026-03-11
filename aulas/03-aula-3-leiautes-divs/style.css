@@ -64,19 +64,9 @@ header {
   gap: 16px;
 }
 
-.marca-logo {
+.logo-img {
   width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-.marca-logo img {
-  width: 58px;
-  height: 58px;
+  height: 86px;
 }
 
 .marca-kicker {
@@ -409,7 +399,7 @@ section {
 
 .jogador-card {
   position: absolute;
-  width: 170px;
+  width: 225px;
   padding: 10px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.92);
@@ -470,48 +460,62 @@ section {
 
 .jogador-goleiro {
   left: 50%;
-  bottom: 26px;
+  bottom: 100px;
   transform: translateX(-50%);
 }
+
+.jogador-goleiro:hover {
+  transform: translateX(-50%) translateY(-5px) scale(1.03);
+}
+
 .jogador-ld {
-  right: 70px;
-  bottom: 230px;
+  right: 25px;
+  bottom: 430px;
 }
+
 .jogador-zd {
-  left: 34%;
-  bottom: 210px;
-}
-.jogador-ze {
-  right: 34%;
-  bottom: 210px;
-}
-.jogador-le {
-  left: 70px;
+  left: 55%;
   bottom: 230px;
 }
+
+.jogador-ze {
+  right: 55%;
+  bottom: 230px;
+}
+
+.jogador-le {
+  left: 25px;
+  bottom: 390px;
+}
+
 .jogador-vol-1 {
-  left: 28%;
-  bottom: 420px;
+  right: 15%;
+  bottom: 630px;
 }
+
 .jogador-vol-2 {
-  right: 28%;
-  bottom: 420px;
+  left: 15%;
+  bottom: 680px;
 }
+
 .jogador-pe {
-  left: 60px;
-  top: 360px;
+  left: 40px;
+  top: 280px;
 }
+
 .jogador-pd {
-  right: 60px;
-  top: 360px;
+  right: 30px;
+  top: 250px;
 }
+
 .jogador-at-1 {
-  left: 38%;
+  right: 15%;
   top: 150px;
 }
+
 .jogador-at-2 {
-  right: 38%;
-  top: 150px;
+  left: 20%;
+  top: 80px;
 }
 
 .banco-area {
@@ -678,7 +682,7 @@ footer {
   margin: 0 auto;
   padding: 20px 24px 26px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 18px;
 }
