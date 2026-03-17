@@ -23,6 +23,10 @@ body {
   background-color: #ff6a00;
 }
 
+.esticar {
+  padding-right: 320px;
+}
+
 .titulo-exercicio {
   position: relative;
   width: fit-content;
