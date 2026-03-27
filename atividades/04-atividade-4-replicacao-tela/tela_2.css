@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+section {
+    display: flex;
+}
+
+.esquerda {
+    width: 59%;
+    margin: 1%;
+    background-color: #6abfed;
+    display: flex;
+}
+
+.direita {
+    width: 39%;
+    margin: 1%;
+    background-color: #6abfed;
+}
+
+#logo-robo {
+    width: 15%;
+}
+
+#logo-robo img {
+    width: 100%;
+}
